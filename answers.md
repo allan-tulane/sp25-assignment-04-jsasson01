@@ -90,14 +90,14 @@ for each APSP call the work is V so since we call it three times for each V the 
 or O(|V|^3)                                                                                                                                                                             
                                                                                                                                                                                         
 - **2e.**                                                                                                                                                                               
-Johnson's Algorithm has work O(|E| * |E|log(|E|))                                                                                                                                       
+Johnson's Algorithm has work O(|V| * |E|log(|E|))                                                                                                                                       
 if |E|log(|E|)> V^2 then we should use our algorithm                                                                                                                                    
                                                                                                                                                                                         
                                                                                                                                                                                         
                                                                                                                                                                                         
 - **3a.**                                                                                                                                                                               
-No, since edges can have negative weight the path that has a higher maximum edge weight can then pass through                                                                           
-negtive edge weights reducing the total weight in comparison to another path or can lead to a shorter path reducing the total weight compared to another path.                          
+Yes, since it is a tree format. If the MST was not the MMET then there would be a shorter path choice at at least one point. This tree
+would not be a MST.                         
                                                                                                                                                                                         
 - **3b.**                                                                                                                                                                               
 Start with the optimal soltuion swap an E out for all possible swaps storing the path value                                                                                             
